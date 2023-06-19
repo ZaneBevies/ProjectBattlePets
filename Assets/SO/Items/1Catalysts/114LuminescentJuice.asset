@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bf3f53d8ec9434aaf48b41bb48adcc, type: 3}
+  m_Name: 114LuminescentJuice
+  m_EditorClassIdentifier: 
+  id: 114
+  itemName: Luminescent Juice
+  desc: +60% Juice Up while close to death.
+  icon: {fileID: 21300000, guid: c59e268724b6e3b489286ea239ab1646, type: 3}
+  type: 2
+  maxStack: 10
+  itemEffects:
+  - name: +60% Juice Up while close to death.
+    effect: {fileID: 11400000, guid: 2b28ed3925a848a43aef5a8fa4dfc2da, type: 2}
+    targets:
+      self: 1
+      enemy: 0
+    conditions:
+      onTagIn: 0
+      onTagOut: 0
+      startOfBattle: 0
+      onBeingHit: 0
+      onHit: 0
+      onCrit: 0
+      inAir: 0
+      whenHP:
+        active: 1
+        HPInequality: 3
+        value: 15

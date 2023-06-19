@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bf3f53d8ec9434aaf48b41bb48adcc, type: 3}
+  m_Name: 102MajesticHorn
+  m_EditorClassIdentifier: 
+  id: 102
+  itemName: Majestic Horn
+  desc: Upon tagging in, adds 4s of Crit Attacks
+  icon: {fileID: 21300000, guid: 2bc6113427dfa0543aa5bcbd6571a70a, type: 3}
+  type: 2
+  maxStack: 10
+  itemEffects:
+  - name: Upon tagging in, adds 4s of Crit Attacks
+    effect: {fileID: 11400000, guid: 77fbf066fe475e442899049d09d50afc, type: 2}
+    targets:
+      self: 1
+      enemy: 0
+    conditions:
+      onTagIn: 1
+      onTagOut: 0
+      startOfBattle: 0
+      onBeingHit: 0
+      onHit: 0
+      onCrit: 0
+      inAir: 0
+      whenHP:
+        active: 0
+        HPInequality: 0
+        value: 0

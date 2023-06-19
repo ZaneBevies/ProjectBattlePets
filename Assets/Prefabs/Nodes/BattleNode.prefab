@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2267797402482846304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2267797402482846305}
+  - component: {fileID: 2267797402482846311}
+  - component: {fileID: 6221566413192782066}
+  m_Layer: 0
+  m_Name: BattleNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2267797402482846305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2267797402482846304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2267797402482846311
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2267797402482846304}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 572cdc67b892a8248817169cdb1746db, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &6221566413192782066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2267797402482846304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db75e782db35ff14a805537e7536ffda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  text: FIGHT!
+  doneText: SEARCH?
+  nodeType: 1
+  northNode: {fileID: 0}
+  nLevelNeeded: 0
+  nObjectiveNeeded: 0
+  nMoveAmount: 1
+  southNode: {fileID: 0}
+  sLevelNeeded: 0
+  sObjectiveNeeded: 0
+  sMoveAmount: 1
+  eastNode: {fileID: 0}
+  eLevelNeeded: 0
+  eObjectiveNeeded: 0
+  eMoveAmount: 1
+  westNode: {fileID: 0}
+  wLevelNeeded: 0
+  wObjectiveNeeded: 0
+  wMoveAmount: 1
+  cutscene: {fileID: 0}
+  GM: {fileID: 0}
+  itemDrops:
+  - item: {fileID: 11400000, guid: 23efad9e80d1c9f4e87c2c4700f31bd7, type: 2}
+    chance: 100
+    minDrops: 0
+    maxDrops: 25
+  - item: {fileID: 11400000, guid: aa594d33b3c413044a52b7434c4b841e, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 5
+  - item: {fileID: 11400000, guid: bba0894febf88f74dbbce4633d27faa7, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 5
+  - item: {fileID: 11400000, guid: 42705f23d31a0da47814d747d6102fb1, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 5
+  - item: {fileID: 11400000, guid: 8f3ace89d25be1a479d915bfe7c419a4, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 3
+  - item: {fileID: 11400000, guid: cf8aa78de3002a74b846689fd96a0cfb, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 5
+  - item: {fileID: 11400000, guid: be56f19532481634081eba35635bcb32, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 20
+  - item: {fileID: 11400000, guid: d72c82031651cb84f9253bbedff5804c, type: 2}
+    chance: 10
+    minDrops: 1
+    maxDrops: 5
+  - item: {fileID: 11400000, guid: b1610870ec859ec4ba5e2c714f8d7e03, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 91ed5fcaa62fe5c4abfcf6679a704927, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 77ea8fb12728c1a44a2cdb0c79a6eee3, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 89f6a16796e118a46a90159c0e682e25, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 9ea5e5f889dff0240aad837615c4049e, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 9737d0ad50c64fa49a97de0f7a5f51a4, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 56b07a18a06990c439144c2ca287d431, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: d7f023dc033392e4b83902b0371fbb1a, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 5afa00876931b4f4eb4945d9ed5e9527, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  - item: {fileID: 11400000, guid: 2f03ac80058ce68479e97c095be818ee, type: 2}
+    chance: 1
+    minDrops: 1
+    maxDrops: 1
+  backgroundSprite: {fileID: 0}
+  monsterPool: []
+  minSpawn: 1
+  maxSpawn: 1
+  completed: 0
+  completedObjectiveUnlock: 0
+  unlockGates: []
+  incompleteSprite: {fileID: 21300000, guid: 572cdc67b892a8248817169cdb1746db, type: 3}
+  completeSprite: {fileID: 21300000, guid: ef36e1bc6e0efa845a959351a0139a62, type: 3}
